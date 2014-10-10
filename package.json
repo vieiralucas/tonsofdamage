@@ -1,0 +1,29 @@
+{
+  "name": "todmg",
+  "version": "1.0.0",
+  "description": "Tons of Damage is a node module for the RIOT's League of Legends API",
+  "main": "todmg.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/vieiralucas/todmg.git"
+  },
+  "keywords": [
+    "lol",
+    "api",
+    "riot",
+    "tons",
+    "damage",
+    "todmg",
+    "league",
+    "legends"
+  ],
+  "author": "Lucas Vieira <vieiralucas4@gmail.com> (http://vieiralucas.github.io/)",
+  "license": "GPL-3.0+",
+  "bugs": {
+    "url": "https://github.com/vieiralucas/todmg/issues"
+  },
+  "homepage": "https://github.com/vieiralucas/todmg"
+}
