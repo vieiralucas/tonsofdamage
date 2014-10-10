@@ -6,7 +6,7 @@
 	}
 
 	Tonsofdamage.create = function(key) {
-		return new todmg(key);
+		return new Tonsofdamage(key);
 	}
 
 	Tonsofdamage.prototype.getChampionsStatus = function(region, callback) {
