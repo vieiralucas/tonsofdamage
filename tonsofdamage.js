@@ -198,6 +198,23 @@
         }
     };
 
+    TonsOfDamage.prototype.getItemsInfo = function(region, callback) {
+        var url = 'https://' + region + '.api.pvp.net/api/lol/static-data/' + region + '/v1.2/item?itemListData=all&api_key=' + this.key;
+        https.get(url, function(res) {
+            var items = "";
+            res.on('error', function(err) {
+                return callback(err);
+            });
+            res.on('data', function(data) {
+                items += data.toString();
+            });
+            res.on('end', function() {
+                callback(null, JSON.parse(items));
+                console.log(url);
+            });
+        });
+    };
+
     function mergeObjects(obj1, obj2) {
         var obj3 = {};
         for (var attr in obj1) { 
